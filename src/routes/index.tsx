@@ -1,9 +1,9 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useStore } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
-  const day = new Date().getDay();
+  const store = useStore({ date: new Date() });
   const dieta = [
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍒"],
@@ -58,11 +58,11 @@ export default component$(() => {
   return (
     <div>
       <h1>
-        Oggi è {new Date().toLocaleDateString("it-IT", { weekday: 'long' })} che si mangia? 🤯
+        Oggi è {store.date.toLocaleDateString("it-IT", { weekday: 'long' })} che si mangia? 🤯
       </h1>
       <h2>Colazione</h2>
       <ul>
-        {dieta.at(day)?.colazione.map((v, i) => (
+        {dieta.at(store.date.getDay())?.colazione.map((v, i) => (
           <li>
             <span>{v}</span>
           </li>
@@ -70,7 +70,7 @@ export default component$(() => {
       </ul>
       <h2>Spuntino</h2>
       <ul>
-        {dieta.at(day)?.spuntino.map((v, i) => (
+        {dieta.at(store.date.getDay())?.spuntino.map((v, i) => (
           <li>
             <span>{v}</span>
           </li>
@@ -78,7 +78,7 @@ export default component$(() => {
       </ul>
       <h2>Pranzo</h2>
       <ul>
-        {dieta.at(day)?.pranzo.map((v, i) => (
+        {dieta.at(store.date.getDay())?.pranzo.map((v, i) => (
           <li>
             <span>{v}</span>
           </li>
@@ -86,7 +86,7 @@ export default component$(() => {
       </ul>
       <h2>Merenda</h2>
       <ul>
-        {dieta.at(day)?.merenda.map((v, i) => (
+        {dieta.at(store.date.getDay())?.merenda.map((v, i) => (
           <li>
             <span>{v}</span>
           </li>
@@ -94,16 +94,20 @@ export default component$(() => {
       </ul>
       <h2>Cena</h2>
       <ul>
-        {dieta.at(day)?.cena.map((v, i) => (
+        {dieta.at(store.date.getDay())?.cena.map((v, i) => (
           <li>
             <span>{v}</span>
           </li>
         ))}
       </ul>
 
-
-  {/*     <Link class="mindblow" href="/flower">
-        Blow my mind 🤯
+      <button class="mindblow" onClick$={() => {
+        console.log("PIPIPIPIPIPIPI ", store.date);
+        store.date = new Date(store.date.setDate(store.date.getDate() + 1));
+        console.log("POPOPO ", store.date);
+      }}>E domani? 🤯</button>
+      {/* <Link class="mindblow" href="/flower">
+        Blow my mind 
       </Link> */}
     </div>
   );
