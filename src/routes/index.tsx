@@ -36,7 +36,7 @@ export default component$(() => {
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍏"],
       spuntino: ["yogurt magro bianco", "frutta fresca 150 gr"],
-      pranzo: ["pane integrale 30 gr", "legumi secchi 80 gr o freschi 240 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["pasta integrale/ferro/orzo 80 gr", "carne bianca 100 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
       merenda: ["frutta secca 🥜 10 gr"],
       cena: ["pesce 200 gr", "pane integrale 60 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
     },
