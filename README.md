@@ -104,3 +104,22 @@ netlify deploy --build
 You must use the `--build` flag whenever you deploy. This ensures that the Edge Functions that this starter site relies on are generated and available when you deploy your site.
 
 Add `--prod` flag to deploy to production.
+
+#### API RICETTE
+
+Ricerca per ingrediente
+
+https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken
+
+```json
+{
+  "meals": [
+    {
+      "strMeal": "Brown Stew Chicken",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg",
+      "idMeal": "52940"
+    }
+}
+
+https://www.themealdb.com/api/json/v1/1/lookup.php?i=53016
+```

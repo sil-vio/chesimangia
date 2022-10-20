@@ -1,9 +1,20 @@
-import { component$, useStore } from '@builder.io/qwik';
+import { component$, createContext, useContextProvider, useStore } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { Link } from '@builder.io/qwik-city';
+import Recipe from '../components/recipe/recipe';
+
+export interface AppState {
+  date: Date;
+  modale: boolean;
+}
+export const AppContext = createContext<AppState>('app-context');
+
+
 
 export default component$(() => {
-  const store = useStore({ date: new Date() });
+  const store = useStore({ date: new Date(), modale: false } as AppState);
+  useContextProvider(AppContext, store);
+
   const dieta = [
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍒"],
@@ -100,15 +111,15 @@ export default component$(() => {
           </li>
         ))}
       </ul>
-
+      <button class="mindblow" onClick$={() => {store.modale = !store.modale; console.log(JSON.stringify(store))}}
+      >Ricetta !</button>
       <button class="mindblow" onClick$={() => {
-        console.log("PIPIPIPIPIPIPI ", store.date);
         store.date = new Date(store.date.setDate(store.date.getDate() + 1));
-        console.log("POPOPO ", store.date);
       }}>E domani? 🤯</button>
       {/* <Link class="mindblow" href="/flower">
         Blow my mind 
       </Link> */}
+      <Recipe></Recipe>
     </div>
   );
 });
