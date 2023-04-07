@@ -8,49 +8,49 @@ export default component$(() => {
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍒"],
       spuntino: [],
-      pranzo: ["pasta 80 gr", "formaggio fresco 100 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["pasta/riso 80 gr", "carne rossa 100 gr 🍔", "verdura cruda/cotta 100/200 gr 🍅", "olio evo 10 gr"],
       merenda: [],
-      cena: ["carne rossa 200 gr", "pane integrale 60 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
+      cena: ["pesce 250 gr", "pane integrale 50 gr", "verdura cruda/cotta 100/200 gr", "olio evo 10gr"]
     },
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🥝"],
-      spuntino: ["yogurt magro bianco", "frutta fresca 150 gr"],
-      pranzo: ["pane integrale 30 gr", "legumi secchi 80 gr o freschi 240 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      spuntino: ["yogurt magro bianco", "frutta fresca 150 gr "],
+      pranzo: ["cous cous 60 gr", "feta/mozzarella/fiocchi di formaggio 50 gr", "verdura cruda/cotta 100/200 gr 🥗", "olio evo 15gr"],
       merenda: ["frutta secca 🥜 10 gr"],
-      cena: ["carne bianca 🍗 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
+      cena: ["carne bianca 🍗 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15gr"]
     },
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍌"],
       spuntino: ["yogurt magro bianco", "frutta fresca 150 gr"],
-      pranzo: ["riso 80 gr", "carne bianca 🍗 100 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["farro/orzo 60 gr", "uova 2 🥚🥚", "verdura cruda/cotta 100/200 gr", "olio evo 10gr"],
       merenda: ["frutta secca 🥜 10 gr"],
-      cena: ["pesce 200 gr", "pane intetrale 60 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
+      cena: ["legumi secchi/freshi 100/300 gr", "pane intetrale 50 gr", "verdura cruda/cotta 100/200 gr  🍅", "olio evo 10gr"]
     },
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍉"],
       spuntino: ["yogurt magro bianco", "frutta fresca 150 gr"],
-      pranzo: ["pane integrale 30 gr", "uova 1 intero + albumi 🍳 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["pasta integrale 60 gr", "pesce grasso fresco/conservato 80/60 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15gr"],
       merenda: ["frutta secca 🥜 10 gr"],
-      cena: ["legumi secchi 80 gr o freschi 240 gr", "carne bianca 100 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
+      cena: ["carne bianca 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 10gr"]
     },
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍏"],
       spuntino: ["yogurt magro bianco", "frutta fresca 150 gr"],
-      pranzo: ["pasta integrale/ferro/orzo 80 gr", "carne bianca 100 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["riso/cous cous 60 gr", "carne bianca 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15gr"],
       merenda: ["frutta secca 🥜 10 gr"],
-      cena: ["pesce 200 gr", "pane integrale 60 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
+      cena: ["farina di legumi 50 gr 🌯 o freschi 150 gr", "affettato magro 40 gr o formaggio fresco 100 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15gr"]
     },
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍎"],
       spuntino: ["yogurt magro bianco", "frutta fresca 150 gr"],
-      pranzo: ["pane integrale 30 gr", "legumi secchi 80 gr o freschi 240 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["pasta integrale 60 gr 🍝", "pesce 250 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15gr"],
       merenda: ["frutta secca 🥜 10 gr"],
-      cena: ["uova 1 intero + albumi 🍳 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"]
+      cena: ["uova 2", "verdura cruda/cotta 100/200 gr", "olio evo 15gr"]
     },
     {
       colazione: ["Fiocchi di avena 40 gr", "Bavanda vegetale 🥛 150 gr", "Frutta Fresca 🍊"],
       spuntino: [],
-      pranzo: ["pesce 400 gr", "verdura cruda/cotta 100/200 gr", "olio evo 15 gr"],
+      pranzo: ["pollo 200 gr", "verdura cruda/cotta 100/200 gr", "olio evo 10gr"],
       merenda: [],
       cena: ["pizza 🍕"]
     }
